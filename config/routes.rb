@@ -1,6 +1,11 @@
 Prelaunch::Application.routes.draw do
   
+  resources :companies
+
   get '/' => 'pages#signup', :as => :signup
+  get '/suggest' => 'companies#new', :as => :suggest
+  get '/thanks' => 'pages#thanks', :as => :thanks
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

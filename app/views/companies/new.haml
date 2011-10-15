@@ -1,0 +1,7 @@
+= form_for @company do |f|
+	= render 'errors', :object => f.object
+	.field.din
+		= f.text_field :name, :class => 'account-fields', :placeholder => 'Name'
+	.field.din
+		= f.text_field :external_url, :class => 'account-fields', :placeholder => 'Website (optional)'
+	= f.submit "suggest", :class => 'input-button din'

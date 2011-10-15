@@ -29,7 +29,6 @@ body {
 	text-align: center;
 	background-color: #e6e3dc;
 	vertical-align: middle;
-	height: 100%;
 }
 
 a { text-decoration: none;}
@@ -350,12 +349,21 @@ a.fl:hover { color: #ec6549; }
 	color: #707070;
 }
 
+.floater {
+	float: left;
+	height: 50%;
+	margin-bottom: -200px;
+}
+
 .prelaunch {
 	@include box;
+	clear: both;
+	position: relative;
 	text-align: left;
 	margin: 0 auto;
 	width: 418px;
 	padding: 26px;
+	height: 350px;
 }
 
 .follow {

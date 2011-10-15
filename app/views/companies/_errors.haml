@@ -1,0 +1,10 @@
+- if @company.errors.any?
+	#error_explanation
+		Looks like there 
+		- if @company.errors.count < 2
+			was a problem.
+		- else
+			were some problems.
+		- @company.errors.full_messages.each do |msg|
+			%li
+				= msg
