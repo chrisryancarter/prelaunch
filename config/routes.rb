@@ -1,4 +1,6 @@
 Prelaunch::Application.routes.draw do
+  
+  get '/' => 'pages#signup', :as => :signup
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
