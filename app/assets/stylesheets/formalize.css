@@ -26,7 +26,8 @@
 }
 
 .input_full {
-  width: 100%;
+	width:400px;
+	height: 45px;
 }
 
 /*
@@ -247,6 +248,8 @@ textarea:active {
 
   /* for Opera */
   z-index: 1;
+	height: 35px;
+  width: 400px;
 }
 
 input[type="file"]:focus,
@@ -338,6 +341,9 @@ textarea {
   overflow: auto;
   resize: vertical;
   width: 100%;
+	width:400px;
+	height: 25px;
+	
 }
 
 optgroup {
@@ -414,4 +420,15 @@ optgroup {
 
 .ie6_input_disabled {
   background: #eee;
+}
+
+.company-fields{
+	background-color: navy;
+	border: black 2px solid;
+	color: white;
+	font-family: arial, verdana, ms sans serif;
+	font-size: 12pt;
+	font-weight: normal
+}
+	
 }

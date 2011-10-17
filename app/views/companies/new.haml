@@ -1,7 +1,16 @@
-= form_for @company do |f|
-	= render 'errors', :object => f.object
-	.field.din
-		= f.text_field :name, :class => 'account-fields', :placeholder => 'Name'
-	.field.din
-		= f.text_field :external_url, :class => 'account-fields', :placeholder => 'Website (optional)'
-	= f.submit "suggest", :class => 'input-button din'
+.floater
+.prelaunch2
+	%span.din.heading.dark
+		LIST NEW COMPANY
+	.divider
+	%p.din.gray.copy
+		Listing your company on Domesticated gives the benefit of exposing your brand to a large, highly target audience, absolutely free.
+		%br
+		.divider
+	= form_for @company do |f|
+		= render 'errors', :object => f.object
+		.field.din.full
+			= f.text_field :name, :class => 'company-fields', :placeholder => 'Name'
+		.field.din.full
+			= f.text_field :external_url, :class => 'input_full', :placeholder => 'Website (optional)'
+		= f.submit "suggest", :class => 'input-button din'
