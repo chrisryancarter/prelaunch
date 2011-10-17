@@ -196,7 +196,6 @@ input[type="week"] {
     on inputs. Arial is more reliable, on Windows and OS X.
   */
   font-family: Arial, 'Liberation Sans', FreeSans, sans-serif;
-  height: 1.8em;
 
   /* IE7 */
   *padding-top: 2px;
